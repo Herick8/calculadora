@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="utf-8" />
+   <title>Calculadora</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+   <div class="calc">
+      <div class="corpoVisor">
+         <input type="text" name="visor" class="visor" id="visor">
+      </div>
+      <div class="corpo">
+         <div class="boxnumber">
+            <div class="acoes">
+               <div onclick="window.location.href=window.location.href;">CE</div>
+               <div>C</div>
+               <div>Del</div>
+            </div>
+            <div>
+               <div class="numbers">
+                  <div onclick="number(7)" id="7">7</div>
+                  <div onclick="number(8)" id="8">8</div>
+                  <div onclick="number(9)" id="9">9</div>
+               </div>
+            </div>
+            <div class="numbers">
+               <div onclick="number(4)" id="4">4</div>
+               <div onclick="number(5)" id="5">5</div>
+               <div onclick="number(6)" id="6">6</div>
+            </div>
+            <div class="numbers">
+               <div onclick="number(1)" id="1">1</div>
+               <div onclick="number(2)" id="2">2</div>
+               <div onclick="number(3)" id="3">3</div>
+            </div>
+            <div class="numbers">
+               <div onclick="number(',')" id="comma">,</div>
+               <div onclick="number(0)" id="0">0</div>
+               <div onclick="number('.')" id="dot">.</div>
+            </div>
+         </div>
+         <div class="corpoOp">
+            <div class="operadores">
+               <div  onclick="number('/')" id="divi">.\.</div>
+               <div onclick="number('x')" id="mult">X</div>
+               <div onclick="number('-')" id="sub">-</div>
+               <div onclick="number('+')" id="som">+</div>
+               <div onclick="" id="resu">=</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+<script src="main.js"></script>
+</body>
+</html>
